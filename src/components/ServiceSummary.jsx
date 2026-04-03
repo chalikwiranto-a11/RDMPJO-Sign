@@ -15,6 +15,7 @@ const ServiceSummary = () => {
         scrollTrigger: {
           trigger: "#title-service-1",
           scrub: true,
+          refreshPriority: -2,
         },
       });
       gsap.to("#title-service-2", {
@@ -22,6 +23,7 @@ const ServiceSummary = () => {
         scrollTrigger: {
           trigger: "#title-service-2",
           scrub: true,
+          refreshPriority: -2,
         },
       });
       gsap.to("#title-service-3", {
@@ -29,6 +31,7 @@ const ServiceSummary = () => {
         scrollTrigger: {
           trigger: "#title-service-3",
           scrub: true,
+          refreshPriority: -2,
         },
       });
 
@@ -38,6 +41,7 @@ const ServiceSummary = () => {
           scrollTrigger: {
             trigger: "#title-service-4",
             scrub: true,
+            refreshPriority: -2,
           },
         });
       }
@@ -49,56 +53,27 @@ const ServiceSummary = () => {
   return (
     <section
       ref={containerRef}
-      className="mt-20 overflow-hidden font-light leading-snug text-center mb-42 contact-text-responsive"
-      style={{
-        marginTop: "5rem",
-        marginBottom: "10rem",
-        overflow: "hidden",
-        fontWeight: 300,
-        lineHeight: 1.375,
-        textAlign: "center",
-        padding: "5rem 0",
-        color: "#fff", // using white since app bg is usually dark
-        fontSize: "clamp(2rem, 4vw, 3.5rem)"
-      }}
+      className="contact-text-responsive"
     >
       <div id="title-service-1">
-        <p style={{ fontSize: "1.2em", marginBottom: "2rem" }}>Main Contractor</p>
+        <p className="service-title-1">Main Contractor</p>
       </div>
       <div
         id="title-service-2"
-        className="flex items-center justify-center gap-3 translate-x-16"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1.5rem",
-          transform: "translateX(4rem)",
-          margin: "1.5rem 0",
-          whiteSpace: "nowrap"
-        }}
+        className="service-row service-row-2"
       >
         <p style={{ fontWeight: 400 }}>Hyundai Engineering Co., Ltd</p>
-        <div className="bg-gold" style={{ width: "clamp(3rem, 10vw, 8rem)", height: "4px", backgroundColor: "#D4AF37", flexShrink: 0 }} />
+        <div className="bg-gold" />
         <p>Rekayasa Industri</p>
       </div>
       <div
         id="title-service-3"
-        className="flex items-center justify-center gap-3 -translate-x-48"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1.5rem",
-          transform: "translateX(-12rem)",
-          margin: "1.5rem 0",
-          whiteSpace: "nowrap"
-        }}
+        className="service-row service-row-3"
       >
         <p>PP</p>
-        <div className="bg-gold" style={{ width: "clamp(3rem, 10vw, 8rem)", height: "4px", backgroundColor: "#D4AF37", flexShrink: 0 }} />
+        <div className="bg-gold" />
         <p style={{ fontStyle: "italic" }}>SK Engineering & Construction</p>
-        <div className="bg-gold" style={{ width: "clamp(3rem, 10vw, 8rem)", height: "4px", backgroundColor: "#D4AF37", flexShrink: 0 }} />
+        <div className="bg-gold" />
         <p>All Subcontractor</p>
       </div>
     </section>
