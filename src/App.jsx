@@ -74,7 +74,7 @@ export default function App() {
         </p>
 
         <button
-          onClick={() => window.location.href = 'https://rdmp-data-osbl.up.railway.app/admin/login'}
+          onClick={() => window.location.href = 'https://lois-tanagrine-morgan.ngrok-free.dev/admin/login'}
           style={{
             padding: '16px 56px',
             background: 'transparent',
